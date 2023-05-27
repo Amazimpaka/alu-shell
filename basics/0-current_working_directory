@@ -1,3 +1,2 @@
- !/bin/sh
-echo "current directory using PWD variable"
- echo $PWD
+ #!/bin/bash
+chmod u+x  echo pwd
