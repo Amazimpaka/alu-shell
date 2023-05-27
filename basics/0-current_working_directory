@@ -1,0 +1,3 @@
+ !/bin/sh
+echo "current directory using PWD variable"
+ echo $PWD
