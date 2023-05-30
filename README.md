@@ -1,1 +1,1 @@
-the scripts will be displaying messages according to the instrructions.
+this repository will contain scripts
