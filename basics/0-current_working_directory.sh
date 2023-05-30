@@ -1,2 +1,2 @@
-#!bin/bash
-$pwd \n
+#!/usr/bin/env bash
+pwd
