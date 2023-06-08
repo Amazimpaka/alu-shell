@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
-#output Best School 10 times using until loop
+
+# Output "Best School" and "hi" using a while loop
 i=1
-until false;
-do 
-echo "Best School"
-i=$((i+1))
-if ((i<=10));
-then
-        continue
-else
-	break
-fi
+while [ $i -le 10 ]; do
+	echo "Best School"
+    if [ $i -eq 9 ];then
+	    echo "hi"
+    fi
+    i=$((i+1))
 done
+
