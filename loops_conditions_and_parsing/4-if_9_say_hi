@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Output "Best School" and "hi" using a while loop
 i=1
 while [ $i -le 10 ]; do
