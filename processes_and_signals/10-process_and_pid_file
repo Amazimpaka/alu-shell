@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Creating a file containing its PID
+# Displaying  infinity and beyond indefinitely
+# Displaying "I hate the kill command" when receiving a SIGTERM signal
+# Displaying "Y U no love me?!" when receiving a SIGINTG signal
+# Deletes the file and terminates itself when receiving a SiGQUIT or SIGTERM signal
+
+file="/var/run/myscript.pid"
+
+if [ ! -e "$doc" ]; then
+	touch "$file"
+fi
+sleep 2 &
+echo "$!" > "$doc"
+
+trap 'echo "I hate the kill command"; rm "$doc"; exit' SIGTERM SIGQUIT
+
+trap "echo Y U no love me?!" SIGINT
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
