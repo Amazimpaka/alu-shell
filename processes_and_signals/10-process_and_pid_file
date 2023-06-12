@@ -8,10 +8,10 @@
 file="/var/run/myscript.pid"
 
 if [ ! -e "$doc" ]; then
-	touch "$doc"
+	touch "$file"
 fi
 sleep 2 &
-echo "$!" > "$doc"
+echo "$!" > "$file"
 
 trap 'echo "I hate the kill command"; rm "$doc"; exit' SIGTERM SIGQUIT
 
