@@ -8,7 +8,7 @@
 file="/var/run/myscript.pid"
 
 if [ ! -e "$doc" ]; then
-	touch "$file"
+	touch "$doc"
 fi
 sleep 2 &
 echo "$!" > "$doc"
